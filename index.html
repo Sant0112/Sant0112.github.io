@@ -2,13 +2,57 @@
 
 <html>
     <head>
+        <link rel="stylesheet" href="./styles/styles.css">
+        <script src="./script/script.js"></script>
         <title>
-            My repo
+            Matthew's cat website
         </title>
     </head>
+   
     <body>
-        <div>
-        Welcome to my repo...
+        <style>
+            div {
+              background-color: rgb(229, 194, 139);
+              width: 300px;
+              padding: 50px;
+              margin: 20px;
+            }
+            </style>
+            </head>
+            <body>
+            
+            <h1>Ancient Egypt</h1>
+            
+            <p>The CSS box model is essentially a box that wraps around every HTML element. It consists of: borders, padding, margins, and the actual content.</p>
+            
+            <div>This text is the content of the box. We have added a 50px padding, 20px margin and a 15px green border. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+
+            <button onclick="showMessage()">Click me</button>
+            <button onclick="checkAge()">Drive!</button>
+            <button onclick="showMany()">Don't close me!</button>
+            <button onclick="displaycount()"> Counter</button>
+            <p id="carrier"> 0 </p>
+
+            <script>
+
+                var count =(function() {
+                    var counter = 0;
+                    return function() {return counter +=1;}
+
+                })();
+
+                function displaycount(){
+                    document.getElementById("carrier").innerHTML = count();
+                }
+            </script>
+        Welcome to my hall of cats...
         </div>
+
+        <h2 class="title">
+            Section
+        </h2>
+        <h1 id="kittens">
+            Kittens
+        </h1>
     </body>
 </html>
