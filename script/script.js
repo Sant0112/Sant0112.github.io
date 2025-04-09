@@ -31,3 +31,15 @@ function showMany()
         alert("Don't close me!")
     }
 }
+
+
+    function changeToCat()
+    {
+        document.getElementById("catdog").src="https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_3x2.jpg"
+    }
+
+
+function changeToDog()
+{
+    document.getElementById("catdog").src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Labrador_Retriever_portrait.jpg/1200px-Labrador_Retriever_portrait.jpg"
+}
